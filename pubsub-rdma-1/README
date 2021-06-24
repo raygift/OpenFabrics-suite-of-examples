@@ -1,0 +1,116 @@
+OpenFabrics-suite-of-examples/pubsub-rdma-1
+
+The OpenFabrics suite of examples is code developed for the Programming
+with OpenFabrics Software Training Course.
+
+Copyright (c) 2011 OpenFabrics Alliance, Inc.  All rights reserved.
+
+This software is available to you under a choice of one of two
+licenses.  You may choose to be licensed under the terms of the GNU
+General Public License (GPL) Version 2, available from the file
+GNU_GPL_OFA.txt in the directory containing this source file, or the
+OpenIB.org BSD license, available from the file BSD_for_OFA.txt in the
+directory containing this source file.
+
+
+This demo illustrates a ping-pong client server application using
+RDMA_READ to transfer amount of data given in -z option.
+It DOES use a separate thread to handle cm events and also uses
+completion events in-line instead of polling.
+
+The flow for the client program is:
+
+		1. rdma_create_event_channel()
+			creates a communication channel on which to report
+			asynchronous cm events
+		2. rdma_create_id()
+			allocates a communication identifier rdma_cm_id
+			add associates it with the cm event channel
+			this is passed as a parameter to subsequent
+			cm calls in order to identify the connection
+		3. (rdma_)getaddrinfo()
+			translates human-readable DNS name or IP address and
+			port number into internal addressing form
+		4. rdma_resolve_addr()
+			does DNS lookup on server address and bind
+			this rdma_cm_id to a local RDMA device
+		5. await_cm_event()
+		6. rdma_resolve_route()
+			finds an RDMA route to the server
+		7. await_cm_event()
+		8. ibv_alloc_pd()
+			allocates a protection domain (PD)
+		9. ibv_create_comp_channel()
+			creates a communicaton channel on which to report
+			asynchronous completion events
+		10.ibv_create_cq()
+			creates a completion queue to hold pending events
+		11.rdma_create_qp()
+			creates a queue-pair (i.e., a send and a recv queue)
+			and get it ready for sending and receiving
+		12.ibv_req_notify_cq()
+			requests notification when first completion is queued
+		13.ibv_reg_mr()
+			registers memory areas to be used for send and recv
+			for each side, we need a buffer, wr and sge for:
+				RDMA READ
+				send local buffer info
+				recv remote buffer info
+				send ack
+				recv ack
+		14.--create valid work requests and scatter-gather elements
+			uses registered memory areas in send and recv
+		15.rdma_connect()
+			for RDMA_PS_TCP, initiates a connection request
+				to remote server
+			for RDMA_PS_UDP, initiates a lookup of the
+				remote QP providing the datagram service
+			allows user to specify operating parameters for
+			this connection:
+				max outstanding RDMA read/atomic ops to/from
+					remote side
+				use hardware flow control
+				max retries on an error
+		16.await_cm_event()
+		17.ibv_post_recv()
+			initiates a recv to get remote buffer info from agent
+		18.ibv_post_recv()
+			initiates a recv to get first ACK from agent
+		19.ibv_post_send()
+			initiates send of local buffer info to agent
+		20.await_completion_event()
+			waits for send local buffer info to complete
+		21.await_completion_event()
+			waits for recv remote buffer info to complete
+	loop
+		22.await_commpletion_event()
+			waits for recv ACK from agent to complete
+		23.ibv_post_recv()
+			initiates a recv to get next ACK from agent
+		24.ibv_post_send()
+			initiates RDMA_READ of data from agent
+		25.await_completion_event()
+			waits for send RDMA_READ of data to complete
+		26.ibv_post_send()
+			initiates send ACK to agent
+		27.await_completion_event()
+			waits for send ACK to complete
+	endloop
+		28.rdma_disconnect() -- undoes step 15
+			tells the cm to break the network connection
+		29.await_cm_event()
+			waits for the result from the cm
+		30.ibv_dereg_mr() -- undoes step 13
+			unregisters the memory areas used for send and recv
+		31.rdma_destroy_qp() -- undoes step 11
+			destroys queue pair
+		32.ibv_destroy_cq() -- undoes step 10
+			destroys the completion queue
+		33.ibv_destroy_comp_channel() -- undoes step 9
+			destroys the communication channel for completion events
+		34.ibv_dealloc_pd() -- undoes step 8
+			deallocates the protection domain
+		35.rdma_destroy_id() -- undoes step 2
+			destroys the cm_id
+		36.rdma_destroy_event_channel() -- undoes step 1
+			destroys the communication channel for cm events

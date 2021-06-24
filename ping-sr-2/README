@@ -1,0 +1,81 @@
+OpenFabrics-suite-of-examples/ping-sr-2
+
+The OpenFabrics suite of examples is code developed for the Programming
+with OpenFabrics Software Training Course.
+
+Copyright (c) 2011 OpenFabrics Alliance, Inc.  All rights reserved.
+
+This software is available to you under a choice of one of two
+licenses.  You may choose to be licensed under the terms of the GNU
+General Public License (GPL) Version 2, available from the file
+GNU_GPL_OFA.txt in the directory containing this source file, or the
+OpenIB.org BSD license, available from the file BSD_for_OFA.txt in the
+directory containing this source file.
+
+
+This demo illustrates a simple ping-pong client server application.
+It does NOT use separate threads or handlers for either cm events
+or completion events.  It is essentially uses the asynchronous
+verbs synchronously -- it polls for everything.  It does not explicitly create
+either cm event channels or completion event channels.
+
+The flow for the client program is:
+
+		0.--process command-line options and set up user-defined
+			structures to keep track of all the connection info
+		1. rdma_create_id()
+			allocates a communication identifier rdma_cm_id
+			in order to identify the connection
+		2. (rdma_)getaddrinfo()
+			translates human-readable DNS name or IP address and
+			port number into internal addressing form
+		3. rdma_resolve_addr()
+			to do DNS lookup on server address and bind
+			this rdma_cm_id to a local RDMA device
+		4. rdma_resolve_route()
+			to find an RDMA route to the server
+		5. freeaddrinfo()
+			free up structure created by getaddrinfo()
+		6. ibv_alloc_pd()
+			allocates a protection domain (PD)
+		7. ibv_create_cq()
+			creates a completion queue to hold pending events
+		8. rdma_create_qp()
+			to create a queue-pair (i.e., a send and a recv queue)
+			and get it ready for sending and receiving
+		9. ibv_reg_mr()
+			to register memory areas to be used for send and recv
+		10.--create valid work requests and scatter-gather elements
+			to use registered memory areas in send and recv
+		11.rdma_connect()
+			for RDMA_PS_TCP, initiates a connection request
+				to remote server
+			allows user to specify operating parameters for
+			this connection:
+				max outstanding RDMA read/atomic ops to/from
+					remote side
+				use hardware flow control
+				max retries on an error
+	loop
+		12.ibv_post_recv()
+			initiate a receive to catch the reply from the server
+		13.ibv_post_send()
+			initiate a send to the server
+		14.ibv_poll_cq()
+			wait for send to complete
+		15.ibv_poll_cq()
+			wait for receive to comple
+	endloop
+		16.rdma_disconnect() -- undoes step 11
+			tell the cm to break the network connection
+		17.ibv_dereg_mr() -- undoes step 9
+			unregister the memory areas used for send and recv
+		18.rdma_destroy_qp() -- undoes step 8
+			destroys queue pair
+		19.ibv_destroy_cq() -- undoes step 7
+			destroys the completion queue
+		20.ibv_dealloc_pd() -- undoes step 6
+			deallocates the protection domain
+		21.rdma_destroy_id() -- undoes step 1
+			destroys the cm_id
+		22.--free the user-defined structures -- undoes step 0

@@ -1,0 +1,17 @@
+OpenFabrics-suite-of-examples/devices
+
+The OpenFabrics suite of examples is code developed for the Programming
+with OpenFabrics Software Training Course.
+
+Copyright (c) 2011 OpenFabrics Alliance, Inc.  All rights reserved.
+
+This software is available to you under a choice of one of two
+licenses.  You may choose to be licensed under the terms of the GNU
+General Public License (GPL) Version 2, available from the file
+GNU_GPL_OFA.txt in the directory containing this source file, or the
+OpenIB.org BSD license, available from the file BSD_for_OFA.txt in the
+directory containing this source file.
+
+
+A simple program to print information about all RDMA interfaces
+on the current host.

@@ -1,0 +1,199 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+OPTIONS	process_options.c	24;"	d	file:
+OUR_BACKLOG	prototypes.h	49;"	d
+OUR_DEFAULT_DATA_SIZE	prototypes.h	55;"	d
+OUR_DEFAULT_LIMIT	prototypes.h	52;"	d
+OUR_DEFAULT_PORT	prototypes.h	46;"	d
+OUR_MAX_USER_DATA_BUFFERS	prototypes.h	58;"	d
+OUR_MAX_WORK_REQUESTS	prototypes.h	61;"	d
+OUR_RQ_DEPTH	prototypes.h	43;"	d
+OUR_SQ_DEPTH	prototypes.h	42;"	d
+PRINT_STATS	prototypes.h	67;"	d
+TRACING	prototypes.h	65;"	d
+VERBOSE_TRACING	prototypes.h	66;"	d
+VERIFY	prototypes.h	64;"	d
+WHITE_SPACE	prototypes.h	38;"	d
+_ISOC99_SOURCE	agent.c	18;"	d	file:
+_ISOC99_SOURCE	bind_client.c	18;"	d	file:
+_ISOC99_SOURCE	bind_listener.c	18;"	d	file:
+_ISOC99_SOURCE	c_d_buffers.c	18;"	d	file:
+_ISOC99_SOURCE	c_d_connect.c	18;"	d	file:
+_ISOC99_SOURCE	c_d_control_struct.c	18;"	d	file:
+_ISOC99_SOURCE	c_d_id.c	18;"	d	file:
+_ISOC99_SOURCE	c_d_queue_pair.c	18;"	d	file:
+_ISOC99_SOURCE	client.c	18;"	d	file:
+_ISOC99_SOURCE	process_cm_events.c	18;"	d	file:
+_ISOC99_SOURCE	process_completions.c	18;"	d	file:
+_ISOC99_SOURCE	process_options.c	18;"	d	file:
+_ISOC99_SOURCE	send_recv.c	18;"	d	file:
+_ISOC99_SOURCE	server.c	18;"	d	file:
+_ISOC99_SOURCE	utilities.c	18;"	d	file:
+_MAX_STRERROR_MALLOC	prototypes.h	40;"	d
+_POSIX_C_SOURCE	agent.c	17;"	d	file:
+_POSIX_C_SOURCE	bind_client.c	17;"	d	file:
+_POSIX_C_SOURCE	bind_listener.c	17;"	d	file:
+_POSIX_C_SOURCE	c_d_buffers.c	17;"	d	file:
+_POSIX_C_SOURCE	c_d_connect.c	17;"	d	file:
+_POSIX_C_SOURCE	c_d_control_struct.c	17;"	d	file:
+_POSIX_C_SOURCE	c_d_id.c	17;"	d	file:
+_POSIX_C_SOURCE	c_d_queue_pair.c	17;"	d	file:
+_POSIX_C_SOURCE	client.c	17;"	d	file:
+_POSIX_C_SOURCE	process_cm_events.c	17;"	d	file:
+_POSIX_C_SOURCE	process_completions.c	17;"	d	file:
+_POSIX_C_SOURCE	process_options.c	17;"	d	file:
+_POSIX_C_SOURCE	send_recv.c	17;"	d	file:
+_POSIX_C_SOURCE	server.c	17;"	d	file:
+_POSIX_C_SOURCE	utilities.c	17;"	d	file:
+_PROTOTYPES_H_	prototypes.h	18;"	d
+_XOPEN_SOURCE	agent.c	19;"	d	file:
+_XOPEN_SOURCE	bind_client.c	19;"	d	file:
+_XOPEN_SOURCE	bind_listener.c	19;"	d	file:
+_XOPEN_SOURCE	c_d_buffers.c	19;"	d	file:
+_XOPEN_SOURCE	c_d_connect.c	19;"	d	file:
+_XOPEN_SOURCE	c_d_control_struct.c	19;"	d	file:
+_XOPEN_SOURCE	c_d_id.c	19;"	d	file:
+_XOPEN_SOURCE	c_d_queue_pair.c	19;"	d	file:
+_XOPEN_SOURCE	client.c	19;"	d	file:
+_XOPEN_SOURCE	process_cm_events.c	19;"	d	file:
+_XOPEN_SOURCE	process_completions.c	19;"	d	file:
+_XOPEN_SOURCE	process_options.c	19;"	d	file:
+_XOPEN_SOURCE	send_recv.c	19;"	d	file:
+_XOPEN_SOURCE	server.c	19;"	d	file:
+_XOPEN_SOURCE	utilities.c	19;"	d	file:
+cm_event_channel	process_cm_events.c	/^	struct rdma_event_channel	*cm_event_channel;$/;"	m	struct:cm_event_thread_params	typeref:struct:cm_event_thread_params::rdma_event_channel	file:
+cm_event_channel	prototypes.h	/^	struct rdma_event_channel	*cm_event_channel;$/;"	m	struct:our_control	typeref:struct:our_control::rdma_event_channel
+cm_event_info_lock	prototypes.h	/^	pthread_mutex_t			cm_event_info_lock;$/;"	m	struct:our_control
+cm_event_info_notify	prototypes.h	/^	pthread_cond_t			cm_event_info_notify;$/;"	m	struct:our_control
+cm_event_thread_id	prototypes.h	/^	pthread_t			cm_event_thread_id;$/;"	m	struct:our_control
+cm_event_thread_params	process_cm_events.c	/^struct cm_event_thread_params {$/;"	s	file:
+cm_id	prototypes.h	/^	struct rdma_cm_id		*cm_id;$/;"	m	struct:our_control	typeref:struct:our_control::rdma_cm_id
+completion_channel	prototypes.h	/^	struct ibv_comp_channel		*completion_channel;$/;"	m	struct:our_control	typeref:struct:our_control::ibv_comp_channel
+completion_queue	prototypes.h	/^	struct ibv_cq			*completion_queue;$/;"	m	struct:our_control	typeref:struct:our_control::ibv_cq
+completion_stats	prototypes.h	/^	unsigned long			*completion_stats;$/;"	m	struct:our_control
+conn	process_cm_events.c	/^	struct our_control		*conn;$/;"	m	struct:cm_event_thread_params	typeref:struct:cm_event_thread_params::our_control	file:
+cq_events_that_need_ack	prototypes.h	/^	unsigned int			cq_events_that_need_ack;$/;"	m	struct:our_control
+current_cm_event_type	prototypes.h	/^	enum rdma_cm_event_type		current_cm_event_type;$/;"	m	struct:our_control	typeref:enum:our_control::rdma_cm_event_type
+current_n_work_completions	prototypes.h	/^	int				current_n_work_completions;$/;"	m	struct:our_control
+data_size	prototypes.h	/^	uint64_t	data_size;$/;"	m	struct:our_options
+disconnected	prototypes.h	/^	volatile int			disconnected;$/;"	m	struct:our_control
+flags	prototypes.h	/^	unsigned int	flags;$/;"	m	struct:our_options
+index_work_completions	prototypes.h	/^	int				index_work_completions;$/;"	m	struct:our_control
+latest_cm_event_type	prototypes.h	/^	enum rdma_cm_event_type		latest_cm_event_type;$/;"	m	struct:our_control	typeref:enum:our_control::rdma_cm_event_type
+latest_cm_id	prototypes.h	/^	struct rdma_cm_id		*latest_cm_id;$/;"	m	struct:our_control	typeref:struct:our_control::rdma_cm_id
+latest_private_data	prototypes.h	/^	struct our_connect_info		latest_private_data;$/;"	m	struct:our_control	typeref:struct:our_control::our_connect_info
+latest_private_data_len	prototypes.h	/^	int				latest_private_data_len;$/;"	m	struct:our_control
+latest_status	prototypes.h	/^	int				latest_status;$/;"	m	struct:our_control
+limit	prototypes.h	/^	uint64_t	limit;$/;"	m	struct:our_options
+main	client.c	/^main(int argc, char *argv[])$/;"	f
+main	server.c	/^main(int argc, char *argv[])$/;"	f
+max_n_work_completions	prototypes.h	/^	int				max_n_work_completions;$/;"	m	struct:our_control
+max_recv_sge	prototypes.h	/^	int		max_recv_sge;$/;"	m	struct:our_options
+max_send_sge	prototypes.h	/^	int		max_send_sge;$/;"	m	struct:our_options
+message	prototypes.h	/^	char		*message;$/;"	m	struct:our_options
+n_user_data_bufs	prototypes.h	/^	int			n_user_data_bufs;$/;"	m	struct:our_control
+notification_stats	prototypes.h	/^	unsigned long			notification_stats;$/;"	m	struct:our_control
+options	process_cm_events.c	/^	struct our_options		*options;$/;"	m	struct:cm_event_thread_params	typeref:struct:cm_event_thread_params::our_options	file:
+our_agent	server.c	/^our_agent(struct rdma_cm_id *event_cm_id, struct our_connect_info *connect_info,$/;"	f	file:
+our_agent_connect	c_d_connect.c	/^our_agent_connect(struct our_control *agent_conn, struct our_options *options)$/;"	f
+our_agent_operation	agent.c	/^our_agent_operation(struct our_control *agent_conn, struct our_options *options)$/;"	f
+our_alloc_pd	c_d_queue_pair.c	/^our_alloc_pd(struct our_control *conn, struct rdma_cm_id *cm_id,$/;"	f	file:
+our_await_cm_event	process_cm_events.c	/^our_await_cm_event(struct our_control *conn,$/;"	f
+our_await_completion	process_completions.c	/^our_await_completion(struct our_control *conn,$/;"	f
+our_calloc	utilities.c	/^our_calloc(unsigned long size, const char *message)$/;"	f
+our_check_completion_status	process_completions.c	/^our_check_completion_status(struct our_control *conn,$/;"	f	file:
+our_client_bind	bind_client.c	/^our_client_bind(struct our_control *client_conn, struct our_options *options)$/;"	f
+our_client_connect	c_d_connect.c	/^our_client_connect(struct our_control *client_conn, struct our_options *options)$/;"	f
+our_client_operation	client.c	/^our_client_operation(struct our_control *client_conn,$/;"	f	file:
+our_cm_event_thread	process_cm_events.c	/^our_cm_event_thread(void *param)$/;"	f	file:
+our_compute_usage	utilities.c	/^our_compute_usage(struct timeval *start, struct timeval *stop,$/;"	f	file:
+our_connect_info	prototypes.h	/^struct our_connect_info {$/;"	s
+our_control	prototypes.h	/^struct our_control {$/;"	s
+our_create_cm_event_thread	process_cm_events.c	/^our_create_cm_event_thread(struct our_control *conn,$/;"	f
+our_create_comp_channel	c_d_queue_pair.c	/^our_create_comp_channel(struct our_control *conn, struct rdma_cm_id *cm_id,$/;"	f	file:
+our_create_control_struct	c_d_control_struct.c	/^our_create_control_struct(struct our_options *options)$/;"	f
+our_create_cq	c_d_queue_pair.c	/^our_create_cq(struct our_control *conn, struct rdma_cm_id *cm_id,$/;"	f	file:
+our_create_event_channel	c_d_id.c	/^our_create_event_channel(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_create_id	c_d_id.c	/^our_create_id(struct our_control *conn, struct our_options *options)$/;"	f
+our_create_qp	c_d_queue_pair.c	/^our_create_qp(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_dealloc_pd	c_d_queue_pair.c	/^our_dealloc_pd(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_destroy_cm_event_thread	process_cm_events.c	/^our_destroy_cm_event_thread(struct our_control *conn,$/;"	f
+our_destroy_comp_channel	c_d_queue_pair.c	/^our_destroy_comp_channel(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_destroy_control_struct	c_d_control_struct.c	/^our_destroy_control_struct(struct our_control *conn,$/;"	f
+our_destroy_cq	c_d_queue_pair.c	/^our_destroy_cq(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_destroy_event_channel	c_d_id.c	/^our_destroy_event_channel(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_destroy_id	c_d_id.c	/^our_destroy_id(struct our_control *conn, struct our_options *options)$/;"	f
+our_destroy_qp	c_d_queue_pair.c	/^our_destroy_qp(struct our_control *conn, struct our_options *options)$/;"	f	file:
+our_disconnect	c_d_connect.c	/^our_disconnect(struct our_control *conn, struct our_options *options)$/;"	f
+our_get_current_time	utilities.c	/^our_get_current_time(struct timespec *current)$/;"	f
+our_get_current_usage	utilities.c	/^our_get_current_usage(struct rusage *current)$/;"	f
+our_get_elapsed_time	utilities.c	/^our_get_elapsed_time(struct timespec *start, struct timespec *stop,$/;"	f	file:
+our_get_elapsed_usage	utilities.c	/^our_get_elapsed_usage(struct rusage *start, struct rusage *stop,$/;"	f	file:
+our_listener_bind	bind_listener.c	/^our_listener_bind(struct our_control *listen_conn, struct our_options *options)$/;"	f
+our_migrate_id	c_d_id.c	/^our_migrate_id(struct our_control *conn, struct rdma_cm_id *new_cm_id,$/;"	f
+our_options	prototypes.h	/^struct our_options {$/;"	s
+our_percentage_time	utilities.c	/^our_percentage_time(struct timespec *base, struct timespec *part)$/;"	f
+our_post_recv	send_recv.c	/^our_post_recv(struct our_control *conn, struct ibv_recv_wr *recv_work_request,$/;"	f
+our_post_send	send_recv.c	/^our_post_send(struct our_control *conn, struct ibv_send_wr *send_work_request,$/;"	f
+our_print_buffer_numbers	c_d_buffers.c	/^our_print_buffer_numbers(struct our_control *conn, const char *name,$/;"	f	file:
+our_print_statistics	utilities.c	/^our_print_statistics(struct our_control *conn, struct our_options *options)$/;"	f
+our_process_options	process_options.c	/^our_process_options(int argc, char *argv[])$/;"	f
+our_report_error	utilities.c	/^our_report_error(int ret, const char *verb_name, struct our_options *options)$/;"	f
+our_report_ok	utilities.c	/^our_report_ok(const char *verb_name, struct our_options *options)$/;"	f
+our_report_ptr	utilities.c	/^our_report_ptr(const char *verb_name, const char *ptr_name, void *ptr,$/;"	f
+our_report_string	utilities.c	/^our_report_string(const char *verb_name, const char *string_name,$/;"	f
+our_report_uint64	utilities.c	/^our_report_uint64(const char *verb_name, const char *number_name,$/;"	f
+our_report_ulong	utilities.c	/^our_report_ulong(const char *verb_name, const char *number_name,$/;"	f
+our_report_wc_status	utilities.c	/^our_report_wc_status(int ret, const char *verb_name, struct our_options *options)$/;"	f
+our_scan_switch_uint64	utilities.c	/^our_scan_switch_uint64(int switch_char, char *value, uint64_t *result,$/;"	f
+our_scan_switch_ulong	utilities.c	/^our_scan_switch_ulong(int switch_char, char *value, unsigned long *result,$/;"	f
+our_setup_agent_buffers	c_d_buffers.c	/^our_setup_agent_buffers(struct our_control *conn, struct our_options *options)$/;"	f
+our_setup_client_buffers	c_d_buffers.c	/^our_setup_client_buffers(struct our_control *conn, struct our_options *options)$/;"	f
+our_setup_conn_params	c_d_connect.c	/^our_setup_conn_params(struct rdma_conn_param *params,$/;"	f	file:
+our_setup_mr	c_d_buffers.c	/^our_setup_mr(struct our_control *conn, void *addr, unsigned int length,$/;"	f	file:
+our_setup_mr_sge	c_d_buffers.c	/^our_setup_mr_sge(struct our_control *conn, void *addr, unsigned int length,$/;"	f	file:
+our_setup_qp	c_d_queue_pair.c	/^our_setup_qp(struct our_control *conn, struct rdma_cm_id *cm_id,$/;"	f
+our_setup_qp_params	c_d_queue_pair.c	/^our_setup_qp_params(struct our_control *conn,$/;"	f	file:
+our_setup_recv_wr	c_d_buffers.c	/^our_setup_recv_wr(struct our_control *conn, struct ibv_sge *sg_list,$/;"	f	file:
+our_setup_send_wr	c_d_buffers.c	/^our_setup_send_wr(struct our_control *conn, struct ibv_sge *sg_list,$/;"	f	file:
+our_setup_sge	c_d_buffers.c	/^our_setup_sge(void *addr, unsigned int length, unsigned int lkey,$/;"	f	file:
+our_setup_user_data	c_d_buffers.c	/^our_setup_user_data(struct our_control *conn, int n_user_bufs, int access[],$/;"	f	file:
+our_trace_error	utilities.c	/^our_trace_error(int ret, const char *verb_name, struct our_options *options)$/;"	f
+our_trace_ok	utilities.c	/^our_trace_ok(const char *verb_name, struct our_options *options)$/;"	f
+our_trace_ptr	utilities.c	/^our_trace_ptr(const char *verb_name, const char *ptr_name, void *ptr,$/;"	f
+our_trace_string	utilities.c	/^our_trace_string(const char *verb_name, const char *string_name,$/;"	f
+our_trace_uint64	utilities.c	/^our_trace_uint64(const char *verb_name, const char *number_name,$/;"	f
+our_trace_ulong	utilities.c	/^our_trace_ulong(const char *verb_name, const char *number_name,$/;"	f
+our_unprocess_options	process_options.c	/^our_unprocess_options(struct our_options *options)$/;"	f
+our_unsetup_buffers	c_d_buffers.c	/^our_unsetup_buffers(struct our_control *conn, struct our_options *options)$/;"	f
+our_unsetup_mr	c_d_buffers.c	/^our_unsetup_mr(struct our_control *conn, struct ibv_mr **mr, int max_slots,$/;"	f	file:
+our_unsetup_qp	c_d_queue_pair.c	/^our_unsetup_qp(struct our_control *conn, struct our_options *options)$/;"	f
+our_wait_for_notification	process_completions.c	/^our_wait_for_notification(struct our_control *conn, struct our_options *options)$/;"	f	file:
+print_ibv_poll_cq_stats	process_completions.c	/^print_ibv_poll_cq_stats(struct our_control *conn, struct our_options *options)$/;"	f
+protection_domain	prototypes.h	/^	struct ibv_pd			*protection_domain;$/;"	m	struct:our_control	typeref:struct:our_control::ibv_pd
+queue_pair	prototypes.h	/^	struct ibv_qp			*queue_pair;$/;"	m	struct:our_control	typeref:struct:our_control::ibv_qp
+recv_queue_depth	prototypes.h	/^	int		recv_queue_depth;$/;"	m	struct:our_options
+remote_data_size	prototypes.h	/^	uint64_t	remote_data_size;$/;"	m	struct:our_connect_info
+remote_limit	prototypes.h	/^	uint64_t	remote_limit;$/;"	m	struct:our_connect_info
+sem	process_cm_events.c	/^	sem_t				sem;$/;"	m	struct:cm_event_thread_params	file:
+send_queue_depth	prototypes.h	/^	int		send_queue_depth;$/;"	m	struct:our_options
+server_name	prototypes.h	/^	char		*server_name;$/;"	m	struct:our_options
+server_port	prototypes.h	/^	char		*server_port;$/;"	m	struct:our_options
+server_port_number	prototypes.h	/^	unsigned long	server_port_number;$/;"	m	struct:our_options
+start_time	prototypes.h	/^	struct timespec		start_time;$/;"	m	struct:our_control	typeref:struct:our_control::timespec
+start_usage	prototypes.h	/^	struct rusage		start_usage;$/;"	m	struct:our_control	typeref:struct:our_control::rusage
+stop_time	prototypes.h	/^	struct timespec		stop_time;$/;"	m	struct:our_control	typeref:struct:our_control::timespec
+stop_usage	prototypes.h	/^	struct rusage		stop_usage;$/;"	m	struct:our_control	typeref:struct:our_control::rusage
+user_data	prototypes.h	/^	unsigned char		*user_data[OUR_MAX_USER_DATA_BUFFERS];$/;"	m	struct:our_control
+user_data_mr	prototypes.h	/^	struct ibv_mr		*user_data_mr[OUR_MAX_USER_DATA_BUFFERS];$/;"	m	struct:our_control	typeref:struct:our_control::ibv_mr
+user_data_recv_work_request	prototypes.h	/^	struct ibv_recv_wr	user_data_recv_work_request[OUR_MAX_WORK_REQUESTS];$/;"	m	struct:our_control	typeref:struct:our_control::ibv_recv_wr
+user_data_send_work_request	prototypes.h	/^	struct ibv_send_wr	user_data_send_work_request[OUR_MAX_WORK_REQUESTS];$/;"	m	struct:our_control	typeref:struct:our_control::ibv_send_wr
+user_data_sge	prototypes.h	/^	struct ibv_sge		user_data_sge[OUR_MAX_USER_DATA_BUFFERS];$/;"	m	struct:our_control	typeref:struct:our_control::ibv_sge
+waiting_on_info_notify	prototypes.h	/^	unsigned int			waiting_on_info_notify;$/;"	m	struct:our_control
+wc_recv	prototypes.h	/^	uint64_t		wc_recv;$/;"	m	struct:our_control
+wc_send	prototypes.h	/^	uint64_t		wc_send;$/;"	m	struct:our_control
+work_completion	prototypes.h	/^	struct ibv_wc			*work_completion;$/;"	m	struct:our_control	typeref:struct:our_control::ibv_wc
