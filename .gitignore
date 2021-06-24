@@ -1,0 +1,6 @@
+*.o
+.vscode/*
+
+!**/*.c
+!Makefile
+!**/Makefile
