@@ -49,7 +49,8 @@
 #define OUR_BACKLOG		3
 
 /* default number of iterations */
-#define OUR_DEFAULT_LIMIT		500000
+#define OUR_DEFAULT_LIMIT		100
+// #define OUR_DEFAULT_LIMIT		500000
 
 /* default size of data buffer transfered in one message */
 #define OUR_DEFAULT_DATA_SIZE		8

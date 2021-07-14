@@ -61,6 +61,10 @@ our_agent(struct rdma_cm_id *event_cm_id, struct our_connect_info *connect_info,
 	if (our_post_recv(agent_conn,
 		&agent_conn->remote_buffer_info_work_request, &options) != 0)
 		goto out4;
+	our_report_string("Lisenter",
+			"call", "our_post_recv",&options);
+
+
 
 	if (our_agent_connect(agent_conn, &options) != 0)
 		goto out4;

@@ -137,10 +137,11 @@ our_setup_send_wr(struct our_control *conn, struct ibv_sge *sg_list,
 	/* set SIGNALED flag so every send generates a completion
 	 * (if we don't do this, then the send queue fills up!)
 	 */
+	// send_work_request->send_flags = 0;
 	send_work_request->send_flags = IBV_SEND_SIGNALED;
 
 	/* not sending any immediate data */
-	send_work_request->imm_data = 0;
+	send_work_request->imm_data = 1;
 }	/* our_setup_send_wr */
 
 
@@ -319,13 +320,15 @@ our_setup_common_buffers(struct our_control *conn, int n_local_sges,
 
 	/* fill in the fields with info about our local rdma buffer */
 	for (i = 0; i < n_local_sges; i++) {
-		// conn->local_buffer_info[i].addr 
-		// 	= htonll((uint64_t)(unsigned long)(conn->user_data[i]));
 		conn->local_buffer_info[i].addr 
+			// = htonll((uint64_t)(unsigned long)(conn->user_data[i]));
 			= (uint64_t)(unsigned long)(conn->user_data[i]);
-		conn->local_buffer_info[i].len = htonl(options->data_size);
+		// conn->local_buffer_info[i].len = htonll(options->data_size);
+		conn->local_buffer_info[i].len = (options->data_size);
+		// conn->local_buffer_info[i].len = htonl(options->data_size);
 		conn->local_buffer_info[i].rkey
-			= htonl(conn->user_data_mr[i]->rkey);
+			= (conn->user_data_mr[i]->rkey);
+			// = htonl(conn->user_data_mr[i]->rkey);
 		if (options->flags & VERBOSE_TRACING) {
 			our_report_ptr("local_buffer_info", "addr",
 						conn->user_data[i], options);
@@ -404,7 +407,7 @@ our_setup_client_buffers(struct our_control *conn, struct our_options *options)
 	our_trace_ok("client's setup_user_data", options);
 
 	/* client needs 1 work request, to RDMA_WRITE out of user_data[1] */
-	our_setup_send_wr(conn, &conn->user_data_sge[1], IBV_WR_RDMA_WRITE, 1,
+	our_setup_send_wr(conn, &conn->user_data_sge[1], IBV_WR_RDMA_WRITE_WITH_IMM, 1,
 					&conn->user_data_send_work_request[0]);
 
 	/* the remote info fields of the RDMA_WRITE work request
@@ -455,7 +458,7 @@ our_setup_agent_buffers(struct our_control *conn, struct our_options *options)
 	our_trace_ok("agent's setup_user_data", options);
 
 	/* agent needs 1 work request, to RDMA_WRITE out user_data[1] */
-	our_setup_send_wr(conn, &conn->user_data_sge[1], IBV_WR_RDMA_WRITE, 1,
+	our_setup_send_wr(conn, &conn->user_data_sge[1], IBV_WR_RDMA_WRITE_WITH_IMM, 1,
 					&conn->user_data_send_work_request[0]);
 
 	/* the remote info field for the RDMA_WRITE work request

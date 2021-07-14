@@ -18,8 +18,12 @@
 #define _ISOC99_SOURCE
 #define _XOPEN_SOURCE 600
 
-#include "prototypes.h"
+#define CHAR_MIN 'a'
+#define CHAR_MAX 'z'
 
+#include "prototypes.h"
+#include <stdlib.h>
+#include <string.h>
 
 /* The client does the following once
  *	post a recv for remote buffer info from agent
@@ -55,24 +59,24 @@ our_client_operation(struct our_control *client_conn,
 	/* keep track of maximum number of "spins" in busy wait loop */
 	max_spin_count = 0;
 
-	/* fill in the client's data with a meaningful pattern */
-	ptr = client_conn->user_data[1];
-	ret = ' ';
-	for (i = 0; i < options->data_size; ) {
-		if (isprint(ret)) {
-			*ptr++ = ret++;
-			i++;
-		} else {
-			ret = ' ';
-		}
-	}
-	if (options->flags & VERBOSE_TRACING) {
-		if (options->data_size <= 200) {
-			fprintf(stderr, "%s: user_data[1] (%lu bytes): %s\n",
-					options->message, options->data_size,
-					client_conn->user_data[1]);
-		}
-	}
+	// /* fill in the client's data with a meaningful pattern */
+	// ptr = client_conn->user_data[1];
+	// ret = ' ';
+	// for (i = 0; i < options->data_size; ) {
+	// 	if (isprint(ret)) {
+	// 		*ptr++ = ret++;
+	// 		i++;
+	// 	} else {
+	// 		ret = ' ';
+	// 	}
+	// }
+	// if (options->flags & VERBOSE_TRACING) {
+	// 	if (options->data_size <= 200) {
+	// 		fprintf(stderr, "%s: user_data[1] (%lu bytes): %s\n",
+	// 				options->message, options->data_size,
+	// 				client_conn->user_data[1]);
+	// 	}
+	// }
 	
 	/* this should count up to options->limit */
 	client_conn->wc_rdma_write = 0;
@@ -127,10 +131,10 @@ our_client_operation(struct our_control *client_conn,
 	 * rdma part of our RDMA_WRITE work request
 	 */
 	client_conn->user_data_send_work_request[0].wr.rdma.remote_addr
-			= (client_conn->remote_buffer_info[0].addr);
+			= client_conn->remote_buffer_info[0].addr;
 			// = ntohll(client_conn->remote_buffer_info[0].addr);
 	client_conn->user_data_send_work_request[0].wr.rdma.rkey
-			= (client_conn->remote_buffer_info[0].rkey);
+			= client_conn->remote_buffer_info[0].rkey;
 			// = ntohl(client_conn->remote_buffer_info[0].rkey);
 
 	/* mark the time we start sending to server */
@@ -138,32 +142,66 @@ our_client_operation(struct our_control *client_conn,
 	our_get_current_usage(&client_conn->start_usage);
 
 	for (count = 0; count < options->limit; count++) {
+		ret = our_post_recv(client_conn,
+			&client_conn->remote_buffer_info_work_request, options);
+		if (ret != 0) {
+			goto out1;
+		}
+		ptr = client_conn->user_data[1];
+		/* countable string */
+		memset(ptr,'#',options->data_size);
+		char str[options->data_size];
+		sprintf(str,"%ld",count);
+		memcpy(ptr,str,strlen(str));
+
+		/* fill in the client's data with different meaningful patterns */
+		// int par = ' ';
+		// for (i = sizeof(uint64_t); i < options->data_size; ) {
+		// 	if (isprint(par)) {
+		// 		*ptr++ = (par++)+count;
+		// 		i++;
+		// 	} else {
+		// 		par = ' ';
+		// 	}
+		// }
+
+		// fprintf(stderr, "%s: user_data[1] (%lu bytes): %s\n",
+		// 			options->message, options->data_size,
+		// 			client_conn->user_data[1]);
 
 		/* clear pong buffer */
 		memset(client_conn->user_data[0], 0, options->data_size);
 
-		/* now we send our RDMA_WRITE to the remote agent */
 		ret = our_post_send(client_conn,
 			&client_conn->user_data_send_work_request[0], options);
 		if (ret != 0) {
 			goto out1;
 		}
+		fprintf(stderr,"we had send our RDMA_WRITE to the remote agent\n");
 
-		/* wait for the send RDMA_WRITE to complete */
-		if (options->flags & VERBOSE_TRACING)
-			our_report_string("waiting completion of",
-			"send RDMA_WRITE", "event IBV_WC_RDMA_WRITE", options);
+// sleep(1);
+			
+		// /* wait for the send RDMA_WRITE to complete */
+		// if (options->flags & VERBOSE_TRACING)
+		// 	our_report_string("waiting completion of",
+		// 	"send RDMA_WRITE", "event IBV_WC_RDMA_WRITE", options);
 
-		ret = our_await_completion(client_conn,&work_completion,options);
-		if (ret != 0) {
-			goto out1;
-		}
+		// /* wait for the send RDMA_WRITE_WITH_IMM to complete */
+		// if (options->flags & VERBOSE_TRACING)
+		// 	our_report_string("waiting completion of",
+		// 	"send RDMA_WRITE with imm", "event IBV_WC_RDMA_WRITE", options);
+
+		// ret = our_await_completion(client_conn,&work_completion,options);
+		// if (ret != 0) {
+		// 	goto out1;
+		// }
+
 		client_conn->wc_rdma_write++;
 
-		/* busy wait until our local buffer gets full pong pattern
-		 * (i.e., until all bytes in the buffer become non-zero)
-		 */
-		ret = our_all_non_zero_completion_match(client_conn,
+		// /* no busy wait 
+		//  * but still need detect disconnection
+		//  */
+		ret = test_all_non_zero_completion_match(client_conn,
 			client_conn->user_data[0], options->data_size,
 			&max_spin_count, options);
 		if (ret != 0) {
@@ -171,6 +209,15 @@ our_client_operation(struct our_control *client_conn,
 			goto out1;
 		}
 
+		/* wait for the wr IBV_WC_RECV_RDMA_WITH_IMM to complete */
+		if (options->flags & VERBOSE_TRACING)
+			our_report_string("waiting completion of",
+			"ibv_post_recv ", "event IBV_WC_RECV_RDMA_WITH_IMM", options);
+		ret = our_await_completion(client_conn,&work_completion,options);
+		if (ret != 0) {
+			goto out1;
+		}
+// sleep(5);
 		if (options->flags & VERIFY) {
 			if (memcmp(client_conn->user_data[0],
 					client_conn->user_data[1],
@@ -186,6 +233,7 @@ our_client_operation(struct our_control *client_conn,
 				fprintf(stderr, "%s: %lu verification "
 					"failed\n", options->message,
 					client_conn->wc_rdma_write);
+				goto out1;
 			} else {
 				if (options->flags & VERBOSE_TRACING) { 
 					fprintf(stderr, "%s: %lu "

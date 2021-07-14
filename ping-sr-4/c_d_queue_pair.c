@@ -47,7 +47,7 @@ our_create_qp(struct our_control *conn, struct our_options *options)
 	init_attr.cap.max_inline_data = 0;
 	init_attr.qp_type = IBV_QPT_RC;
 	init_attr.sq_sig_all = 0;
-	init_attr.xrc_domain = NULL;
+	// init_attr.xrc_domain = NULL;
 
 	/* allocate a queue pair associated with the cm_id for this connection
 	 * and transition it for sending and receiving.  On return, it is ready

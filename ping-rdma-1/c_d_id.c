@@ -141,11 +141,13 @@ our_migrate_id(struct our_control *conn, struct rdma_cm_id *new_cm_id,
 
 	/* replace agent's limit and data_size with values from connect_info */
 	our_trace_uint64("option", "count", options->limit, options);
-	options->limit = ntohll(connect_info->remote_limit);
+	options->limit = (connect_info->remote_limit);
+	// options->limit = ntohll(connect_info->remote_limit);
 	our_report_uint64("client", "count", options->limit, options);
 
 	our_trace_uint64("option", "data_size", options->data_size, options);
-	options->data_size = ntohll(connect_info->remote_data_size);
+	options->data_size = (connect_info->remote_data_size);
+	// options->data_size = ntohll(connect_info->remote_data_size);
 	our_report_uint64("client", "data_size", options->data_size, options);
 
 	/* create our own channel */

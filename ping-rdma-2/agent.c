@@ -117,7 +117,8 @@ our_agent_operation(struct our_control *agent_conn, struct our_options *options)
 	}
 
 	/* dig the number of iterations the client finished out of the ACK */
-	agent_conn->wc_rdma_both = ntohl(agent_conn->recv_ack.ack_count);
+	agent_conn->wc_rdma_both = (agent_conn->recv_ack.ack_count);
+	// agent_conn->wc_rdma_both = ntohl(agent_conn->recv_ack.ack_count);
 
 	/* now we send an ACK to the remote client */
 	ret = our_post_send(agent_conn,

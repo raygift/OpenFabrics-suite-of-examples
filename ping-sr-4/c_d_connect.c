@@ -49,9 +49,10 @@ our_client_connect(struct our_control *client_conn, struct our_options *options)
 	int			ret;
 
 	/* pass client's limit and data_size to the server as private data */
-	connect_info.remote_limit = htonll(options->limit);
-	connect_info.remote_data_size = htonll(options->data_size);
-
+	// connect_info.remote_limit = htonll(options->limit);
+	// connect_info.remote_data_size = htonll(options->data_size);
+	connect_info.remote_limit = htonl(options->limit);
+	connect_info.remote_data_size = htonl(options->data_size);
 	/* set up parameters to define properties of the new connection */
 	our_setup_conn_params(&client_params,&connect_info,sizeof(connect_info));
 

@@ -110,12 +110,23 @@ our_agent_operation(struct our_control *agent_conn, struct our_options *options)
 	our_get_current_time(&agent_conn->start_time);
 	our_get_current_usage(&agent_conn->start_usage);
 
-	for (count = 0; count < options->limit; count++) {
+	printf("options->data_size: %lu\n", options->data_size);
+// /* turn off SIGNALED flag on RDMA_WRITE */
+// 	agent_conn->user_data_send_work_request[0].send_flags &= ~IBV_SEND_SIGNALED;
 
-		/* busy wait until our local buffer gets full ping pattern
-		 * (i.e., until all bytes in the buffer become non-zero)
-		 */
-		ret = our_all_non_zero_completion_match(agent_conn,
+	for (count = 0; count < options->limit; count++) {
+		// sleep(1);
+
+		if (our_post_recv(agent_conn,
+			&agent_conn->remote_buffer_info_work_request, options) != 0)
+			goto out1;
+
+		ret = our_await_completion(agent_conn,&work_completion,options);
+		if (ret != 0) {
+			goto out1;
+		}
+
+		ret = test_all_non_zero_completion_match(agent_conn,
 			agent_conn->user_data[0], options->data_size,
 			&max_spin_count, options);
 		if (ret != 0) {
@@ -123,12 +134,12 @@ our_agent_operation(struct our_control *agent_conn, struct our_options *options)
 			goto out1;
 		}
 
+
 		/* copy ping buffer into pong buffer, then clear ping buffer */
 		memcpy(agent_conn->user_data[1], agent_conn->user_data[0],
 							options->data_size);
 		memset(agent_conn->user_data[0], 0, options->data_size);
 
-		/* now we send our RDMA_WRITE to the remote client */
 		ret = our_post_send(agent_conn,
 				&agent_conn->user_data_send_work_request[0],
 				options);
@@ -136,16 +147,14 @@ our_agent_operation(struct our_control *agent_conn, struct our_options *options)
 			goto out1;
 		}
 
-		/* wait for the send RDMA_WRITE to complete */
-		if (options->flags & VERBOSE_TRACING)
-			our_report_string("waiting completion of",
-			"send RDMA_WRITE", "event IBV_WC_RDMA_WRITE", options);
 
 		ret = our_await_completion(agent_conn,&work_completion,options);
 		if (ret != 0) {
 			goto out1;
 		}
 		agent_conn->wc_rdma_write++;
+		fprintf(stdout,"after server our_await_completion()___________________\n");
+
 	}	/* for */
 out1:
 	our_print_statistics(agent_conn, options);

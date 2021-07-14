@@ -34,8 +34,11 @@ our_wait_for_notification(struct our_control *conn, struct our_options *options)
 
 	/* wait for a completion notification (this verb blocks) */
 	errno = 0;
+	our_report_string("Debug","our_wait_for_notification","will call ibv_get_cq_event",options);
 	ret = ibv_get_cq_event(conn->completion_channel,
 						&event_queue, &event_context);
+	our_report_string("Debug","our_wait_for_notification","done call ibv_get_cq_event",options);
+
 	if (ret != 0) {
 		our_report_error(ret, "ibv_get_cq_event", options);
 		goto out0;
@@ -129,6 +132,8 @@ our_await_completion(struct our_control *conn,
 	int	ret;
 
 	/* wait for next work completion to appear in completion queue */
+	char* opStr="";
+
 	do	{
 		if (conn->index_work_completions
 					< conn->current_n_work_completions) {
@@ -149,10 +154,9 @@ our_await_completion(struct our_control *conn,
 		errno = 0;
 		ret = ibv_poll_cq(conn->completion_queue,
 				conn->max_n_work_completions,
-				conn->work_completion);
+				conn->work_completion);		
 		if (ret < 0) {
 			our_report_error(ret, "ibv_poll_cq", options);
-			our_report_error(ret, "ibv_wc_status_str(wc->status)", ibv_wc_status_str(conn->work_completion->status));
 			goto out0;
 		}
 		/* keep statistics on the number of items returned */
@@ -169,9 +173,52 @@ our_await_completion(struct our_control *conn,
 			/* got at least 1 completion, use element 0 */
 			conn->current_n_work_completions = ret;
 			conn->index_work_completions = 1;
-			*work_completion = &conn->work_completion[0];
+			*work_completion = &conn->work_completion[0];	
 		}
+
+	fprintf(stderr, "%s: collected  %d from cq element \n",
+		options->message, ret);
+	for(int i=0;i<ret;i++){
+switch ((&conn->work_completion[i])->opcode) {
+	case IBV_WC_SEND:
+		opStr="IBV_WC_SEND";
+		break;
+	case IBV_WC_RDMA_WRITE:
+		opStr="IBV_WC_RDMA_WRITE";
+		break;
+	case IBV_WC_RDMA_READ:
+		opStr="IBV_WC_RDMA_READ";
+		break;
+	case IBV_WC_COMP_SWAP:
+		opStr="IBV_WC_COMP_SWAP";
+		break;
+	case IBV_WC_FETCH_ADD:
+		opStr="IBV_WC_FETCH_ADD";
+		break;
+	case IBV_WC_BIND_MW:
+		opStr="IBV_WC_BIND_MW";
+		break;
+	case IBV_WC_LOCAL_INV:
+		opStr="IBV_WC_LOCAL_INV";
+		break;
+	case IBV_WC_RECV:
+		opStr="IBV_WC_RECV";
+		break;
+	case IBV_WC_RECV_RDMA_WITH_IMM:
+		opStr="IBV_WC_RECV_RDMA_WITH_IMM";
+		break;
+	case IBV_WC_RNR_RETRY_EXC_ERR:
+		opStr="IBV_WC_RNR_RETRY_EXC_ERR";
+		break;
+	default:
+		opStr="other opcode";
+
+}
+	fprintf(stderr, "%s: cq element %d's opcode is %s, wr_id is %lu,wc_flags is %d ,status is %s\n",
+		options->message, i, opStr,(&conn->work_completion[i])->wr_id,(&conn->work_completion[i])->wc_flags,ibv_wc_status_str((&conn->work_completion[i])->status));
+	}
 	} while (ret == 0);
+	// } while ((ret == 0)||(opStr=!"IBV_WC_RDMA_WRITE") );
 
 	/* have picked up a work completion */
 	ret = our_check_completion_status(conn, *work_completion, options);
@@ -194,7 +241,8 @@ our_all_non_zero_completion_match(struct our_control *conn, unsigned char *bptr,
 	unsigned char	*ptr;
 	uint64_t	i, spin_count;
 	int		ret;
-
+	our_report_string("busy wait",
+			"our_all_non_zero_completion_match", "", options);
 	ret = 0;
 	for (spin_count = 0; ; spin_count++) {
 		/* stop everything if remote side disconnected unexpectedly */
@@ -219,6 +267,41 @@ our_all_non_zero_completion_match(struct our_control *conn, unsigned char *bptr,
 	return ret;
 }	/* our_all_non_zero_completion_match */
 
+/* fake busy wait
+ * 
+ *
+ * Returns 0 if successful (and updates max_spin_count as appropriate)
+ *	  -1 if remote side has disconnected unexpectedly
+ */
+int
+test_all_non_zero_completion_match(struct our_control *conn, unsigned char *bptr,
+			uint64_t size, uint64_t *max_spin_count,
+			struct our_options *options)
+{
+	// unsigned char	*ptr;
+	uint64_t	spin_count;
+	int		ret;
+	// our_report_string("no busy wait",
+	// 		"", "", options);
+		fprintf(stdout,"no busy wait\n");
+
+	ret = 0;
+	for (spin_count = 0; ; spin_count++) {
+		/* stop everything if remote side disconnected unexpectedly */
+		if (conn->disconnected != 0) {
+			ret = -1;
+			errno = ECONNRESET;
+			our_report_error(ret, "completion_match", options);
+			break;
+		}
+		//尽快退出busy wait，使得server 在没有拿到client 发送的完整信息时发送pong，目的是导致ping pong数据verify失败
+		break;
+
+	}
+	if (*max_spin_count < spin_count)
+			*max_spin_count = spin_count;
+	return ret;
+}	/* test_all_non_zero_completion_match */
 
 void
 print_ibv_poll_cq_stats(struct our_control *conn, struct our_options *options)

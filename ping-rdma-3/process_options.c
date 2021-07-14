@@ -52,6 +52,9 @@ our_process_options(int argc, char *argv[])
 	options->max_send_sge = OUR_MAX_SGES;
 	options->max_recv_sge = OUR_MAX_SGES;
 	options->flags = 0;
+	//0xff; trace
+	//0x01; verify
+	// 0x05: trace verfy
 
 	/* our "message" will be the last component of the executable path */;
 	options->message = strrchr(argv[0], '/');

@@ -30,7 +30,7 @@
 #include <netdb.h>
 #include <rdma/rdma_cma.h>
 #include <inttypes.h>
-#include <infiniband/arch.h>
+// #include <infiniband/arch.h>
 #include <pthread.h>
 #include <semaphore.h>
 
@@ -39,8 +39,10 @@
 
 #define _MAX_STRERROR_MALLOC	64
 
-#define OUR_SQ_DEPTH	16
-#define OUR_RQ_DEPTH	16
+#define OUR_SQ_DEPTH	499
+#define OUR_RQ_DEPTH	499
+// #define OUR_SQ_DEPTH	16
+// #define OUR_RQ_DEPTH	16
 
 /* our default port number if user doesn't supply one on the command line */
 #define OUR_DEFAULT_PORT	12321
@@ -49,7 +51,9 @@
 #define OUR_BACKLOG		3
 
 /* default number of iterations */
-#define OUR_DEFAULT_LIMIT		500000
+// #define OUR_DEFAULT_LIMIT		500000
+#define OUR_DEFAULT_LIMIT		500
+
 
 /* default size of data buffer transfered in one message */
 #define OUR_DEFAULT_DATA_SIZE		8
@@ -475,6 +479,11 @@ our_await_completion(struct our_control *conn,
  */
 extern int
 our_all_non_zero_completion_match(struct our_control *conn, unsigned char *bptr,
+			uint64_t size, uint64_t *max_spin_count,
+			struct our_options *options);
+
+extern int
+test_all_non_zero_completion_match(struct our_control *conn, unsigned char *bptr,
 			uint64_t size, uint64_t *max_spin_count,
 			struct our_options *options);
 

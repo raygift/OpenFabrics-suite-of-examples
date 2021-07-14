@@ -129,13 +129,17 @@ our_client_operation(struct our_control *client_conn,
 	 * to both point to the remote agent's single buffer
 	 */
 	client_conn->user_data_send_work_request[0].wr.rdma.remote_addr
-			= ntohll(client_conn->remote_buffer_info[0].addr);
+			= (client_conn->remote_buffer_info[0].addr);
+			// = ntohll(client_conn->remote_buffer_info[0].addr);
 	client_conn->user_data_send_work_request[0].wr.rdma.rkey
-			= ntohl(client_conn->remote_buffer_info[0].rkey);
+			= (client_conn->remote_buffer_info[0].rkey);
+			// = ntohl(client_conn->remote_buffer_info[0].rkey);
 	client_conn->user_data_send_work_request[1].wr.rdma.remote_addr
-			= ntohll(client_conn->remote_buffer_info[0].addr);
+			= (client_conn->remote_buffer_info[0].addr);
+			// = ntohll(client_conn->remote_buffer_info[0].addr);
 	client_conn->user_data_send_work_request[1].wr.rdma.rkey
-			= ntohl(client_conn->remote_buffer_info[0].rkey);
+			= (client_conn->remote_buffer_info[0].rkey);
+			// = ntohl(client_conn->remote_buffer_info[0].rkey);
 
 	/* mark the time we start sending to server */
 	our_get_current_time(&client_conn->start_time);

@@ -320,10 +320,12 @@ our_setup_common_buffers(struct our_control *conn, int n_local_sges,
 	/* fill in the fields with info about our local rdma buffer */
 	for (i = 0; i < n_local_sges; i++) {
 		conn->local_buffer_info[i].addr 
-			= htonll((uint64_t)(unsigned long)(conn->user_data[i]));
+			= ((uint64_t)(unsigned long)(conn->user_data[i]));
+			// = htonll((uint64_t)(unsigned long)(conn->user_data[i]));
 		conn->local_buffer_info[i].len = htonl(options->data_size);
 		conn->local_buffer_info[i].rkey
-			= htonl(conn->user_data_mr[i]->rkey);
+			= (conn->user_data_mr[i]->rkey);
+			// = htonl(conn->user_data_mr[i]->rkey);
 		if (options->flags & VERBOSE_TRACING) {
 			our_report_ptr("local_buffer_info", "addr",
 						conn->user_data[i], options);

@@ -131,8 +131,12 @@ int
 our_report_wc_status(int ret, const char *verb_name, struct our_options *options)
 {
 	/* ensure that ret is an enum ibv_wc_status value */
-	if (ret < IBV_WC_SUCCESS || ret > IBV_WC_GENERAL_ERR)
+	if (ret < IBV_WC_SUCCESS || ret > IBV_WC_GENERAL_ERR){
+			fprintf(stderr, "%s: %s returned status %d %s\n",
+		options->message, verb_name, ret, ibv_wc_status_str(ret));
 		return ret;
+
+	}
 
 	/* print the status error message */
 	fprintf(stderr, "%s: %s returned status %d %s\n",

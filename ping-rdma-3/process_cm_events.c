@@ -315,7 +315,6 @@ our_await_cm_event(struct our_control *conn,
 						&conn->cm_event_info_lock);
 		conn->waiting_on_info_notify--;
 	} while (1);
-
 	pthread_mutex_unlock(&conn->cm_event_info_lock);
 	if (options->flags & TRACING) {
 		fprintf(stderr, "%s: %s got cm event %d (%s) cm_id %p "

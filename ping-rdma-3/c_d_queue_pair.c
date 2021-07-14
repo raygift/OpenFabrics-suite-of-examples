@@ -83,7 +83,6 @@ our_create_qp(struct our_control *conn, struct our_options *options)
 		our_trace_ulong("rdma_create_qp", "max_inline_data",
 				init_attr.cap.max_inline_data, options);
 	}
-
 	return ret;
 }	/* our_create_qp */
 
@@ -349,6 +348,7 @@ our_setup_qp(struct our_control *conn, struct rdma_cm_id *cm_id,
 	if (ret != 0) {
 		goto err3;
 	}
+	
 
 	/* request notification when first completion is queued */
 	errno = 0;

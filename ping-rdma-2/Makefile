@@ -17,7 +17,7 @@ CC = gcc
 
 CFLAGS = -Wall -O -g
 
-LDFLAGS = -lrt -lrdmacm
+LDFLAGS = -lrt -lrdmacm -libverbs -lpthread
 
 SOURCES = $(shell ls *.{c,h})
 
@@ -33,6 +33,12 @@ client:	client.o utilities.o process_options.o \
 		c_d_queue_pair.o c_d_connect.o \
 		c_d_buffers.o send_recv.o \
 		process_cm_events.o process_completions.o
+	$(CC) client.o utilities.o process_options.o \
+		c_d_control_struct.o c_d_id.o bind_client.o \
+		c_d_queue_pair.o c_d_connect.o \
+		c_d_buffers.o send_recv.o \
+		process_cm_events.o process_completions.o \
+		-o client $(LDFLAGS)
 
 client.o:	client.c prototypes.h
 
@@ -41,6 +47,12 @@ server:	server.o utilities.o process_options.o \
 		c_d_connect.o c_d_queue_pair.o \
 		c_d_buffers.o send_recv.o agent.o \
 		process_cm_events.o process_completions.o
+	$(CC) server.o utilities.o process_options.o \
+		c_d_control_struct.o c_d_id.o bind_listener.o \
+		c_d_connect.o c_d_queue_pair.o \
+		c_d_buffers.o send_recv.o agent.o \
+		process_cm_events.o process_completions.o \
+		-o server $(LDFLAGS)
 
 server.o:	server.c prototypes.h
 

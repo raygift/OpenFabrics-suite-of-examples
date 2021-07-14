@@ -32,8 +32,8 @@ our_setup_conn_params(struct rdma_conn_param *params,
 	params->private_data_len = private_data_len;
 	params->responder_resources = 2;
 	params->initiator_depth = 2;
-	params->retry_count = 5;
-	params->rnr_retry_count = 5;
+	params->retry_count = 7;
+	params->rnr_retry_count = 7;
 }	/* our_setup_conn_params */
 
 
@@ -53,6 +53,7 @@ our_client_connect(struct our_control *client_conn, struct our_options *options)
 	// connect_info.remote_data_size = htonll(options->data_size);
 	connect_info.remote_limit = options->limit;
 	connect_info.remote_data_size = options->data_size;
+	printf("options->data_size %lu\n", options->data_size);
 
 	/* set up parameters to define properties of the new connection */
 	our_setup_conn_params(&client_params,&connect_info,sizeof(connect_info));

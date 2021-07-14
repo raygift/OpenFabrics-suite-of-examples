@@ -129,13 +129,17 @@ our_client_operation(struct our_control *client_conn,
 	 * to both point to the remote agent's single buffer
 	 */
 	client_conn->user_data_send_work_request[0].wr.rdma.remote_addr
-			= ntohll(client_conn->remote_buffer_info[0].addr);
+			= (client_conn->remote_buffer_info[0].addr);
+			// = ntohll(client_conn->remote_buffer_info[0].addr);
 	client_conn->user_data_send_work_request[0].wr.rdma.rkey
-			= ntohl(client_conn->remote_buffer_info[0].rkey);
+			= (client_conn->remote_buffer_info[0].rkey);
+			// = ntohl(client_conn->remote_buffer_info[0].rkey);
 	client_conn->user_data_send_work_request[1].wr.rdma.remote_addr
-			= ntohll(client_conn->remote_buffer_info[0].addr);
+			= (client_conn->remote_buffer_info[0].addr);
+			// = ntohll(client_conn->remote_buffer_info[0].addr);
 	client_conn->user_data_send_work_request[1].wr.rdma.rkey
-			= ntohl(client_conn->remote_buffer_info[0].rkey);
+			= (client_conn->remote_buffer_info[0].rkey);
+			// = ntohl(client_conn->remote_buffer_info[0].rkey);
 
 	/* turn off the SIGNALED flag on RDMA_WRITE, so it does NOT
 	 * generate a completion
@@ -213,7 +217,8 @@ our_client_operation(struct our_control *client_conn,
 	}
 
 	/* tell the agent the number of iterations we finished */
-	client_conn->send_ack.ack_count = htonl(client_conn->wc_rdma_both);
+	client_conn->send_ack.ack_count = (client_conn->wc_rdma_both);
+	// client_conn->send_ack.ack_count = htonl(client_conn->wc_rdma_both);
 
 	/* now we send our only ACK to the remote agent */
 	ret = our_post_send(client_conn,

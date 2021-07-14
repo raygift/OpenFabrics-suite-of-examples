@@ -40,7 +40,7 @@ our_setup_qp_params(struct our_control *conn,
 	init_attr->cap.max_inline_data = 0;
 	init_attr->qp_type = IBV_QPT_RC;
 	init_attr->sq_sig_all = 0;
-	init_attr->xrc_domain = NULL;
+	// init_attr->xrc_domain = NULL;
 }	/* our_setup_qp_params */
 
 
@@ -133,7 +133,7 @@ our_create_cq(struct our_control *conn, struct rdma_cm_id *cm_id,
 	our_trace_ptr("ibv_create_cq", "returned completion queue channel",
 			conn->completion_queue->channel, options);
 
-	/* allocate an array big enough to never fill up, even if
+	/* allocate an array big enough to never fill up, even if~/Desktop/CProgram/OFA_Training_suite-of-examples/OpenFabrics-suite-of-examples/
 	 * completion queue is full when polled
 	 */
 	conn->max_n_work_completions = conn->completion_queue->cqe + 1;

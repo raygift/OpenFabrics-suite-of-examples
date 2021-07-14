@@ -1,0 +1,2188 @@
+client: option server_name "192.168.92.3"
+client: option server_port 12321
+client: option count 500
+client: option data_size 8
+client: our_create_cq max_n_work_completions 1024
+client: rdma_connect connected cm_id 0x55aeb8f0c8d0
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_SEND, wr_id is 94208915417216,wc_flags is 0 ,status is success
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV, wr_id is 94208915417216,wc_flags is 1 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  24 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 9's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 10's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 11's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 12's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 13's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 14's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 15's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 16's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 17's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 18's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 19's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 20's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 21's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 22's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 23's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  10 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 9's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  25 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 7's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 8's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 9's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 10's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 11's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 12's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 13's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 14's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 15's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 16's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 17's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 18's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 19's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 20's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 21's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 22's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 23's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 24's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  10 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 9's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  14 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 9's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 10's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 11's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 12's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 13's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  18 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 9's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 10's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 11's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 12's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 13's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 14's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 15's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 16's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 17's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  9 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  6 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 4's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 5's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  6 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 5's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+options->data_size 8
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no buswe had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  8 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 4's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 5's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  16 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 8's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 9's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 10's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 11's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 12's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 13's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 14's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 15's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  14 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 7's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 8's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 9's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 10's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 11's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 12's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 13's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  14 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 5's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 6's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 7's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 8's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 9's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 10's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 11's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 12's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 13's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  3 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  7 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 2's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 3's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 4's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 5's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 6's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  4 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 2's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 3's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  1 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+client: cq element 1's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+we had send our RDMA_WRITE to the remote agent
+we had send our RDMA_WRITE to the remote agent
+client: Debug our_wait_for_notification "will call ibv_get_cq_event"
+client: Debug our_wait_for_notification "done call ibv_get_cq_event"
+client: collected  2 from cq element 
+client: cq element 0's opcode is IBV_WC_RECV_RDMA_WITH_IMM, wr_id is 94208915417216,wc_flags is 3 ,status is success
+client: cq element 1's opcode is IBV_WC_RDMA_WRITE, wr_id is 94208915417216,wc_flags is 2 ,status is success
+we had send our RDMA_WRITE to the remote agent
+client: 500 rdma_write completions
+client: 8.781962798 seconds elapsed time
+client: ibv_get_cq_event calls 215
+client: work_completion_array_size[25] occurrences 1
+client: work_completion_array_size[24] occurrences 1
+client: work_completion_array_size[23] occurrences 0
+client: work_completion_array_size[22] occurrences 0
+client: work_completion_array_size[21] occurrences 0
+client: work_completion_array_size[20] occurrences 0
+client: work_completion_array_size[19] occurrences 0
+client: work_completion_array_size[18] occurrences 1
+client: work_completion_array_size[17] occurrences 0
+client: work_completion_array_size[16] occurrences 1
+client: work_completion_array_size[15] occurrences 0
+client: work_completion_array_size[14] occurrences 3
+client: work_completion_array_size[13] occurrences 0
+client: work_completion_array_size[12] occurrences 0
+client: work_completion_array_size[11] occurrences 0
+client: work_completion_array_size[10] occurrences 2
+client: work_completion_array_size[9] occurrences 1
+client: work_completion_array_size[8] occurrences 1
+client: work_completion_array_size[7] occurrences 1
+client: work_completion_array_size[6] occurrences 2
+client: work_completion_array_size[5] occurrences 0
+client: work_completion_array_size[4] occurrences 8
+client: work_completion_array_size[3] occurrences 16
+client: work_completion_array_size[2] occurrences 64
+client: work_completion_array_size[1] occurrences 113
+client: work_completion_array_size[0] occurrences 0
+client: total occurrences 215
+client: total work completions 502
+client: busy wait loop max_spin_count 0
+client: rdma_disconnect disconnected cm_id 0x55aeb8f0c8d0
+client: our_destroy_control_struct final disconnected 2
+y wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait
+no busy wait

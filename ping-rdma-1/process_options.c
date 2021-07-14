@@ -51,7 +51,7 @@ our_process_options(int argc, char *argv[])
 	options->recv_queue_depth = OUR_RQ_DEPTH;
 	options->max_send_sge = OUR_MAX_SGES;
 	options->max_recv_sge = OUR_MAX_SGES;
-	options->flags = 0;
+	options->flags = 1;
 
 	/* our "message" will be the last component of the executable path */;
 	options->message = strrchr(argv[0], '/');
