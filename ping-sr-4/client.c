@@ -20,7 +20,6 @@
 
 #include "prototypes.h"
 
-
 /* The client performs the following loop "limit" times:
  *	post a receive
  *	send data to the server
@@ -194,19 +193,25 @@ main(int argc, char *argv[])
 	if (client_conn == NULL)
 		goto out1;
 
-	if (our_create_id(client_conn, options) != 0)
+	// if (our_create_id(client_conn, options) != 0)
+	if (rsocket_create_id(client_conn, options)!=0)// use rsocket create cm_id, and set to client_conn->cm_id
 		goto out2;
+// no need to process rdma_resolve_addr() and rdma_resolve_route() explicitly, rsocket.h rconnect() will do these works
+// 
+	// if (our_client_bind(client_conn, options) != 0)
+	// 	goto out3;
 
-	if (our_client_bind(client_conn, options) != 0)
-		goto out3;
+	// if (our_setup_qp(client_conn, client_conn->cm_id, options) != 0)
+		// goto out3;
+	rsocket_setup_sockopt(client_conn, options);
+	// if (our_setup_client_buffers(client_conn, options) != 0)
+		// goto out4;
 
-	if (our_setup_qp(client_conn, client_conn->cm_id, options) != 0)
-		goto out3;
-
-	if (our_setup_client_buffers(client_conn, options) != 0)
-		goto out4;
-
-	if (our_client_connect(client_conn, options) != 0)
+	// if (our_client_connect(client_conn, options) != 0)
+	// rconnect() -> rs_do_connect() -> rdma_resolve_addr  rdma_resolve_route 
+	// rs_create_ep() \ rdma_connect()
+	// rs_post_recv()
+	if(rconnect(client_conn->cm_id->channel->fd,options->ai->ai_addr,options->ai->ai_addrlen)!=0)
 		goto out5;
 
 	our_trace_ptr("Client", "connected our_control", client_conn,

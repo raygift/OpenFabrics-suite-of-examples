@@ -116,6 +116,28 @@ out0:
 	return ret;
 }	/* our_create_id */
 
+int
+rsocket_create_id(struct our_control *conn, struct our_options *options)
+{
+	int fd,ret=0;
+	errno = 0;
+	// TODO: need create event channel manually ?
+	// ret = our_create_event_channel(conn, options);
+	fd = rsocket(AF_INET, SOCK_STREAM, 0);//  rdma_create_id(NULL, &rs->cm_id, rs, RDMA_PS_TCP);
+	if (fd < 0) {
+		ret = -1;
+		if (errno == ENODEV){
+			fprintf(stderr, "No RDMA devices were detected\n");
+			goto out0;
+		}
+		else
+			perror("rsocket failed");
+	}
+	conn->cm_id=fd;
+	
+out0:
+	return ret;
+}	/* rsocket_create_id */
 
 /* already have a communication identifier,
  * migrate it to use a new channel and set its context to be this new conn

@@ -18,6 +18,7 @@
 #define _ISOC99_SOURCE
 #define _XOPEN_SOURCE 600
 
+static int buffer_size = 64, inline_size = 64;
 
 #include "prototypes.h"
 
@@ -185,6 +186,45 @@ out0:
 	return ret;
 }	/* our_setup_client_buffers */
 
+void
+rsocket_setup_sockopt(struct our_control *conn, struct our_options *options)
+{
+int val;
+
+	if (buffer_size) {
+		rsetsockopt(conn->cm_id->channel->fd, SOL_SOCKET, SO_SNDBUF, (void *) &buffer_size,
+			      sizeof buffer_size);
+		rsetsockopt(conn->cm_id->channel->fd, SOL_SOCKET, SO_RCVBUF, (void *) &buffer_size,
+			      sizeof buffer_size);
+	} else {
+		val = 1 << 19;
+		rsetsockopt(conn->cm_id->channel->fd, SOL_SOCKET, SO_SNDBUF, (void *) &val, sizeof val);
+		rsetsockopt(conn->cm_id->channel->fd, SOL_SOCKET, SO_RCVBUF, (void *) &val, sizeof val);
+	}
+
+	val = 1;
+	rsetsockopt(conn->cm_id->channel->fd, IPPROTO_TCP, TCP_NODELAY, (void *) &val, sizeof(val));
+
+// rfcntl 不同于fcntl
+// 将cm_id -> recv_cq_channel ，server 的rs->accept_queue[0]或client 的cm_id->channel->fd 都调用fcntl 设为nonblock
+	rfcntl(conn->cm_id->channel->fd, F_SETFL, O_NONBLOCK);
+
+//  还可以设置inline size 和 keepalive
+	rsetsockopt(conn->cm_id->channel->fd, SOL_RDMA, RDMA_INLINE, &inline_size,
+				      sizeof inline_size);
+		// /* Inline size based on experimental data */
+		// if (optimization == opt_latency) {
+		// 	rs_setsockopt(fd, SOL_RDMA, RDMA_INLINE, &inline_size,
+		// 		      sizeof inline_size);
+		// } else if (optimization == opt_bandwidth) {
+		// 	val = 0;
+		// 	rs_setsockopt(fd, SOL_RDMA, RDMA_INLINE, &val, sizeof val);
+		// }
+	
+
+	// if (keepalive)
+	// 	set_keepalive(fd);
+}	/* rsocket_setup_sockopt
 
 /* for this demo, the agent defines:
  *	1 user_data buffer (to recv() the original data and then send() it back)

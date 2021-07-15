@@ -80,3 +80,22 @@ out1:
 out0:
 	return ret;
 }	/* our_client_bind */
+
+int rsocket_client_bind(struct our_control *client_conn, struct our_options *options){
+	struct addrinfo *ai = NULL, *ai_src = NULL;
+		struct addrinfo		*aptr, hints;
+		int ret, err;
+	ret = getaddrinfo(options->server_name, options->server_port,
+								&hints, &aptr);
+	if (ret) {
+		printf("getaddrinfo: %s\n", gai_strerror(ret));
+		goto out0;
+	}
+	options->ai = aptr;
+
+
+out1:
+	freeaddrinfo(aptr);
+out0:
+	return ret;
+}

@@ -34,6 +34,8 @@
 #include <fcntl.h>
 #include <poll.h>
 
+#include <rdma/rsocket.h>
+#include <netinet/tcp.h>
 
 #define WHITE_SPACE " \n\r\t\v\f"
 
@@ -68,6 +70,7 @@
 #define PRINT_STATS	0x08
 
 struct our_options {
+	struct addrinfo *ai;
 	char		*server_name;
 	char		*server_port;
 	char		*message;
@@ -375,6 +378,11 @@ our_agent_connect(struct our_control *agent_conn, struct our_options *options);
 extern int
 our_disconnect(struct our_control *conn, struct our_options *options);
 
+extern int
+rsocket_create_id(struct our_control *conn, struct our_options *options);
+
+extern void
+rsocket_setup_sockopt(struct our_control *conn, struct our_options *options);
 
 /***** this part contains functions needed for data setup and transfer *****/
 
